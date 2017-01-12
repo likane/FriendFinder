@@ -11,10 +11,12 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
+//REQUIRE API AND HTML ROUTES ===================================
 
-require("./app/routing/api-routes.js")(app);
-require("./app/routing/html-routes.js")(app);
+var apiRoute = require("./app/routing/api-routes.js")(app);
+var htmlRoute = require("./app/routing/html-routes.js")
 
+//SERVER START LISTEN ===========================================
 app.listen(PORT,function(){
 	
 
