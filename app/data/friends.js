@@ -18,11 +18,3 @@ var friendArray = [
 
 module.exports = friendArray;
 
-// $("#submit").on("click", function(){
-
-
-// 	for (var i =0; i<=friendArray.friendScore.length; i++){
-// 		console.log(friendName);
-// 		console.log("scores!!!!!: " + friendArray.friendScore[i]);
-// 	}
-// });
