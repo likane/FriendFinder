@@ -4,6 +4,17 @@ var friendData = require("../data/friends.js");
 module.exports = function(app) {
 
 	app.get("/api/friends", function(req, res){
+		// req.body.name
+		// req.body.name
+		// req.body.name
+		// req.body.name
+
+		// // logic
+
+		// if(blabla === true){
+		// 	res.json({success: true})
+		// }
+
 		res.json(friendData);
 	});
 
@@ -15,3 +26,5 @@ module.exports = function(app) {
 	});
 
 }
+
+console.log(friendData);
