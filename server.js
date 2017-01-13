@@ -14,7 +14,7 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 //REQUIRE API AND HTML ROUTES ===================================
 
 var apiRoute = require("./app/routing/api-routes.js")(app);
-var htmlRoute = require("./app/routing/html-routes.js")
+var htmlRoute = require("./app/routing/html-routes.js")(app);
 
 //SERVER START LISTEN ===========================================
 app.listen(PORT,function(){
